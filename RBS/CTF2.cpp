@@ -1,15 +1,11 @@
-#include"crow.h"
+#include "crow.h"
 #include "crow/middlewares/cors.h"
+#include "Korisnik.h"
 #include<iostream>
 #include<string>
 
-typedef struct test {
-    static std::string whiteList[];
-    char logIme[20];
-    bool successfullLogin;
-} korisnikData;
-
 std::string korisnikData::whiteList[4] = { "Guga", "Paja", "Bogdan", "Type"};
+int korisnikData::creditMap[4] = { 0, 0, 0, 0 };
 #define WHITE_LIST_SIZE sizeof(korisnikData::whiteList)/sizeof(korisnikData::whiteList[0])
 
 korisnikData korisnik;
