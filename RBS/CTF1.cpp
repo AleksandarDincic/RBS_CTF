@@ -22,6 +22,7 @@ void initCTF1(crow::App<crow::CORSHandler>& app)
         if (!x || !x.has("username") || !x.has("password"))
             return crow::response(400);
 
+
         if (testAdmin.userName.compare(std::string(x["username"].s())) == 0)
         {
             strcpy(testAdmin.checkPassword, std::string(x["password"].s()).c_str());
