@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="CTF1.cpp" />
     <ClCompile Include="CTF2.cpp" />
+    <ClCompile Include="CTF4.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>

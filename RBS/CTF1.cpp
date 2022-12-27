@@ -3,13 +3,13 @@
 #include<iostream>
 #include<string>
 
-typedef struct test {
+typedef struct ctf1 {
     std::string userName = "Admin";
     char checkPassword[20];
     char password[20] = "Sifra12345";
-} adminData;
+} ctf1Data;
 
-adminData testAdmin;
+ctf1Data testAdmin;
 
 void initCTF1(crow::App<crow::CORSHandler>& app)
 {
