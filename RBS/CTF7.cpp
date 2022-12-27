@@ -11,9 +11,9 @@
 
 nameChangeData nameChange;*/
 
-void initCTF6(crow::App<crow::CORSHandler>& app)
+void initCTF7(crow::App<crow::CORSHandler>& app)
 {
-    CROW_ROUTE(app, "/ctf6")
+    CROW_ROUTE(app, "/ctf7")
         .methods("POST"_method)
         ([](const crow::request& req) {
         auto x = crow::json::load(req.body);
