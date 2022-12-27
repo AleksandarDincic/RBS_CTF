@@ -21,6 +21,9 @@
     <ClCompile Include="CTF1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CTF2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CTF.h">

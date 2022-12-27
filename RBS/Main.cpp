@@ -14,5 +14,7 @@ int main()
 
     initCTF1(app);
 
+    initCTF2(app);
+
     app.port(18080).multithreaded().run();
 }
