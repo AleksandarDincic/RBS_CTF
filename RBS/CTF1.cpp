@@ -3,7 +3,7 @@
 #include<iostream>
 #include<string>
 
-typedef struct test {
+typedef struct test1 {
     std::string userName = "Admin";
     char checkPassword[20];
     char password[20] = "Sifra12345";

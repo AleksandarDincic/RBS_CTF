@@ -3,7 +3,7 @@
 #include<iostream>
 #include<string>
 
-typedef struct test {
+typedef struct test2 {
     static std::string whiteList[];
     char logIme[20];
     bool successfullLogin;

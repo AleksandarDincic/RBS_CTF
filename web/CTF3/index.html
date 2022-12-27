@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <script src="index.js"></script>
+</head>
+
+<body onload="testCrow()">
+    <div style="display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                min-height: 100vh;">
+        <div>
+            <table id="table">
+                <tr>
+                    <th>Ime</th>
+                    <th>Pare</th>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <form>
+                <p>Change money</p>
+                Name<input type="text" id="nameField"><br>
+                Money<input type="text" id="moneyField"><br>
+            </form>
+            <button onclick="changeMoney()">Update Money</button>
+            <button onclick="getFlag()">Get Flag</button>
+            <h3 id="flagStatus"></h3>
+        </div>
+    </div>
+</body>
+
+</html>
