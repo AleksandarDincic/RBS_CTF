@@ -1,4 +1,3 @@
-#define _CRT_SECURE_NO_WARNINGS
 #include"crow.h"
 #include "crow/middlewares/cors.h"
 #include<iostream>
