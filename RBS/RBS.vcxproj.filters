@@ -25,6 +25,7 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CTF4.cpp">
+    <ClCompile Include="CTF3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

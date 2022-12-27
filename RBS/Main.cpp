@@ -17,6 +17,7 @@ int main()
     initCTF2(app);
 
     initCTF4(app);
+    initCTF3(app);
 
     app.port(18080).multithreaded().run();
 }
