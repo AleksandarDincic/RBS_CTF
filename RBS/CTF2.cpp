@@ -38,6 +38,6 @@ void initCTF2(crow::App<crow::CORSHandler>& app)
                 return crow::response(200);
             }
         }
-        return crow::response(400);
+        return crow::response(401);
     });
 }
