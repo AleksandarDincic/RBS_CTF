@@ -21,7 +21,7 @@ void initCTF6(crow::App<crow::CORSHandler>& app)
         if (!x || !x.has("address"))
             return crow::response(400);
 
-        buy.funds = korisnikData::creditMap[0];
+        buy.funds = korisnikData::users[0].credit;
 
         strcpy(buy.address, std::string(x["address"].s()).c_str());
 

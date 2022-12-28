@@ -21,8 +21,11 @@ void initCTF7(crow::App<crow::CORSHandler>& app)
         if (!x || !x.has("username"))
             return crow::response(400);
 
-        strcpy((char *)korisnikData::whiteList[0].c_str(), std::string(x["username"].s()).c_str());
+        strcpy(korisnikData::users[0].name, std::string(x["username"].s()).c_str());
 
-        return crow::response(200);
+        return crow::response(crow::json::wvalue({
+                      {"name", korisnikData::users[0].name},
+                      {"credit", korisnikData::users[0].credit},
+            }));
             });
 }

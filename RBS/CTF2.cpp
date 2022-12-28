@@ -4,9 +4,8 @@
 #include<iostream>
 #include<string>
 
-std::string korisnikData::whiteList[4] = { "Guga", "Paja", "Bogdan", "Type"};
-int korisnikData::creditMap[4] = { 0, 0, 0, 0 };
-#define WHITE_LIST_SIZE sizeof(korisnikData::whiteList)/sizeof(korisnikData::whiteList[0])
+singleUser korisnikData::users[4] = { singleUser("Guga", 10), singleUser("Paja", 1000), singleUser("Bogdan", 200), singleUser("Type", 300) };
+#define WHITE_LIST_SIZE sizeof(korisnikData::users)/sizeof(korisnikData::users[0])
 
 korisnikData korisnik;
 
@@ -23,7 +22,7 @@ void initCTF2(crow::App<crow::CORSHandler>& app)
 
         for (int i = 0; i < WHITE_LIST_SIZE; i++) {
 
-            korisnik.successfullLogin = korisnikData::whiteList[i].compare(std::string(x["username"].s())) == 0;
+            korisnik.successfullLogin = std::string(korisnikData::users[i].name).compare(std::string(x["username"].s())) == 0;
 
             strcpy(korisnik.logIme, std::string(x["username"].s()).c_str());
 
