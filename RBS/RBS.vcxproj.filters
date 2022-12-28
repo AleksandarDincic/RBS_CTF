@@ -36,6 +36,9 @@
     <ClCompile Include="CTF7.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CTF5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CTF.h">

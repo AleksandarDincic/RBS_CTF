@@ -19,7 +19,9 @@ int main()
     initCTF3(app);
 
     initCTF4(app);
-    
+
+    initCTF5(app);
+
     initCTF6(app);
 
     initCTF7(app);
