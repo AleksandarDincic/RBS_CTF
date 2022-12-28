@@ -12,7 +12,7 @@ function testCrow()
                 document.getElementById("errorText").innerText = "Error";
         }
     };
-    req.open("POST", "http://localhost:18080/ctf2",)
+    req.open("POST", "http://localhost:18080/ctf6",)
     req.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-    req.send(JSON.stringify({ "username": document.getElementById("address").value}));
+    req.send(JSON.stringify({ "address": document.getElementById("address").value}));
 }

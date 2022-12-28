@@ -4,7 +4,7 @@
 #include<iostream>
 #include<string>
 
-typedef struct test {
+typedef struct ctf6 {
     char address[10];
     int funds;
 } buyData;
