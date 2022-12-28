@@ -15,3 +15,7 @@ void initCTF5(crow::App<crow::CORSHandler>& app);
 void initCTF6(crow::App<crow::CORSHandler>& app);
 
 void initCTF7(crow::App<crow::CORSHandler>& app);
+
+void initCTF8(crow::App<crow::CORSHandler>& app);
+
+void initCTF9(crow::App<crow::CORSHandler>& app);

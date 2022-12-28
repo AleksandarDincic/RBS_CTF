@@ -26,5 +26,9 @@ int main()
 
     initCTF7(app);
 
+    initCTF8(app);
+
+    initCTF9(app);
+
     app.port(18080).multithreaded().run();
 }

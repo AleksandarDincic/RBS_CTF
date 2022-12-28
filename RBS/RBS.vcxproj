@@ -146,6 +146,8 @@
     <ClCompile Include="CTF5.cpp" />
     <ClCompile Include="CTF6.cpp" />
     <ClCompile Include="CTF7.cpp" />
+    <ClCompile Include="CTF8.cpp" />
+    <ClCompile Include="CTF9.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
