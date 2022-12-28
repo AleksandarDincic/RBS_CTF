@@ -4,21 +4,24 @@
 #include<iostream>
 #include<string>
 
+typedef struct ctf8 {
+    char c;
+    char ret[4];
+}ctf8Data;
+
+ctf8Data data8;
+
 void initCTF8(crow::App<crow::CORSHandler>& app)
 {
     CROW_ROUTE(app, "/ctf8")
         .methods("POST"_method)
         ([](const crow::request& req) {
         auto x = crow::json::load(req.body);
-        char c;
-        char ret[4];
-        strcpy(ret, "rsd");
-        void* pointer = &c;
+        strcpy(data8.ret, "rsd");
+        void* pointer = &data8.c;
 
         if (!x || !x.has("number"))
             return crow::response(400);
-
-        strcpy(korisnikData::users[0].name, std::string(x["number"].s()).c_str());
 
         int num = x["number"].i();
 
@@ -28,7 +31,7 @@ void initCTF8(crow::App<crow::CORSHandler>& app)
         char k = *(char*)(pointer);
         int kk = int(k);
 
-        std::string msg = std::to_string(kk*10) + std::string(ret);
+        std::string msg = std::to_string(kk*10) + std::string(data8.ret);
 
         return crow::response(crow::json::wvalue({
                       {"RacunCena", msg}
