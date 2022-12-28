@@ -5,7 +5,7 @@ typedef struct singleUser {
     char name[10];
     int credit;
 
-    singleUser(char _name[], int _credit) {
+    singleUser(char const _name[], int _credit) {
         strcpy(name, _name);
         credit = _credit;
     }
