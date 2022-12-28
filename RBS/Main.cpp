@@ -19,8 +19,10 @@ int main()
     initCTF3(app);
 
     initCTF4(app);
-
+    
     initCTF6(app);
+
+    initCTF7(app);
 
     app.port(18080).multithreaded().run();
 }
