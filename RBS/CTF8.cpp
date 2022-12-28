@@ -4,9 +4,9 @@
 #include<iostream>
 #include<string>
 
-void initCTF7(crow::App<crow::CORSHandler>& app)
+void initCTF8(crow::App<crow::CORSHandler>& app)
 {
-    CROW_ROUTE(app, "/ctf7")
+    CROW_ROUTE(app, "/ctf8")
         .methods("POST"_method)
         ([](const crow::request& req) {
         auto x = crow::json::load(req.body);
